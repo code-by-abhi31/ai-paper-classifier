@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 import joblib
-
+from sklearn.datasets import load_iris
 def main():
     # Load dataset
     iris = datasets.load_iris()

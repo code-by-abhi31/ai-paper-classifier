@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, classification_report
-
+from sklearn.datasets import load_iris
 def main():
     # Load iris dataset
     iris = datasets.load_iris()

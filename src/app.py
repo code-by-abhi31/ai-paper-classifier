@@ -31,3 +31,8 @@ def predict(features: IrisFeatures):
                         features.petal_width]])
     prediction = model.predict(sample)[0]
     return {"prediction": class_names[prediction]}
+def predict1(features: list):
+    prediction1 = best_model.predict1([features])[0]
+    print("🔍 Raw prediction:", prediction1)   # Debug line
+    class_name = datasets.load_iris().target_names[prediction1]
+    return {"prediction": class_name}
